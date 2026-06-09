@@ -3,6 +3,8 @@ import shopMan from './assets/shop.png'
 import cbn from './assets/cbnlogo.png'
 import ndic from './assets/ndicLogo_dark.png'
 
+import NairaIcon from "./NairaIcon";
+
 function Services() {
     return (
         <>
@@ -40,12 +42,7 @@ function Services() {
 
                     <div className='service-card' data-aos="fade-up" data-aos-delay="300">
                         <div className='service-icon loans-icon'>
-                            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
-                                <path d="M5 5L19 19" stroke="#F89734" strokeWidth="2" strokeLinecap="round" />
-                                <path d="M5 19L19 5" stroke="#F89734" strokeWidth="2" strokeLinecap="round" />
-                                <path d="M3 10H21" stroke="#F89734" strokeWidth="2" strokeLinecap="round" />
-                                <path d="M3 14H21" stroke="#F89734" strokeWidth="2" strokeLinecap="round" />
-                            </svg>
+                            <NairaIcon/>
                         </div>
                         <h3>Loans & SME Financing</h3>
                         <p>Quick and accessible financing for salary earners, traders and SMEs.</p>
