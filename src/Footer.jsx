@@ -37,7 +37,7 @@ function Footee() {
                 <div className="mfb-footer__card-body">
                   <p className="mfb-footer__card-label">Email</p>
                   <div className="mfb-footer__card-value">
-                    <a href="mailto:info@mementomfb.com">info@memento.ng</a>
+                    <a href="mailto:info@memento.ng">info@memento.ng</a>
                   </div>
                 </div>
               </div>
