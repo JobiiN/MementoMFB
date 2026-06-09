@@ -42,7 +42,7 @@ function Hero() {
 
                     <section className='hero-stats' data-aos="fade-up" data-aos-delay="300">
                         <div className='total-cust'>
-                            <p>500+</p>
+                            <p>100+</p>
                             <span>Loans disbursed to individuals, traders and SMEs across Nigeria.</span>
                         </div>
 
