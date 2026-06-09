@@ -146,12 +146,9 @@ nav ul {
   border: none;
   font-size: 24px;
   cursor: pointer;
-}
-
-.hamburger {
-    -webkit-appearance: none;
-    appearance: none;
-    color: #1a1f2c;
+  -webkit-appearance: none;
+  appearance: none;
+  color: #1a1f2c;
 }
 
 .mobileMenu {
