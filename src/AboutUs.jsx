@@ -13,17 +13,20 @@ function AboutUss() {
             <div className='AboutSection'>
                 <div className="WWa" data-aos="fade-up">
                     <span className="little-title">ABOUT US</span>
-                    <h2 className="big-title">We help customers <span className="invertbigtitle">grow.</span></h2>
+                    <h2 className="big-title">We help customers <span style={{color: '#F26A1F', fontStyle:'italic'}}>grow.</span></h2>
                     <p>At Memento Microfinance Bank, we combine technology, financial expertise and customer-focused service to provide accessible banking solutions for Nigerians.</p>
                     <br />
                     <p>Our goal is to support bigger dreams through secure, innovative and reliable financial services.</p>
+
+                    <p>We are committed to promoting FINANCIAL INCLUSION & EMPOWERING communities through accessible & responsible banking.</p>
                 </div>
 
             </div>
 
             <div className='WWa' data-aos="fade-up">
-                <h2 className="big-title">A fintech-driven bank, built on <span className="invertbigtitle">trust.</span></h2>
+                <h2 className="big-title">A fintech-driven bank, built on trust.</h2>
                 <p>Memento Microfinance Bank is a fintech-driven microfinance institution committed to delivering accessible and innovative banking services to individuals and businesses across Nigeria.</p>
+                <p>We help our customers build finance stability & CREATE OPPORTUNITIES for growth.</p>
             </div>
 
             <div className="coreV" data-aos="fade-up">

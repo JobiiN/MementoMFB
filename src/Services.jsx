@@ -45,7 +45,7 @@ function Services() {
                         <div className='service-icon loans-icon'>
                             <NairaIcon/>
                         </div>
-                        <h3>Loans & SME Financing</h3>
+                        <h3>Loans & Asset Financing</h3>
                         <p>Quick and accessible financing for salary earners, traders and SMEs.</p>
                     </div>
 
@@ -57,7 +57,7 @@ function Services() {
                                 <circle cx="12" cy="15" r="2" stroke="#FDC32E" strokeWidth="2" />
                             </svg>
                         </div>
-                        <h3>Agent Banking</h3>
+                        <h3>Agency Banking</h3>
                         <p>Convenient banking services closer to your community.</p>
                     </div>
                 </div>
@@ -65,7 +65,7 @@ function Services() {
                 <div id='Loans' />
                 <div className='LoansSection'>
                     <div className='services-header' data-aos="fade-up">
-                        <span className='little-title'>LOANS & SME FINANCE</span>
+                        <span className='little-title'>LOANS & ASSET FINANCE</span>
                         <h2 className='big-title'>Working capital, <span className='invertbigtitle'> when it counts.</span></h2>
                     </div>
 

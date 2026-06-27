@@ -1,4 +1,4 @@
-import video from './assets/video.mp4'
+import video from './assets/video2.mp4'
 import cbn from './assets/cbnlogo.png'
 import ndic from './assets/ndicLogo.png'
 import p1 from './assets/person1.avif'
@@ -46,10 +46,18 @@ function Hero() {
                             <span>Loans disbursed to individuals, traders and SMEs across Nigeria.</span>
                         </div>
 
+                        <div className="line-divider">
+
+                        </div>
+
                         <div className='licensed'>
                             <span>Licensed & Protected</span>
                             <img className="cbnLogo" src={cbn} />
                             <img className="ndicLogo" src={ndic} />
+                        </div>
+
+                        <div className="line-divider">
+
                         </div>
 
                         <div className='disbursed'>

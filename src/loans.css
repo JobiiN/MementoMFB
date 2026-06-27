@@ -1,138 +1,160 @@
 .bento-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: 25vh 15vh 40vh;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 420px 500px;
     gap: 16px;
     padding: 40px 24px;
     max-width: 1440px;
     margin: 0 auto;
+    font-size: large;
+}
 
+
+.loans-title-card .invertbigtitle {
+    display: inline;
 }
 
 .loans-title-card {
-    grid-column: 1 / 3;
-    grid-row: 1;
+    
+    text-align: center;
+    left: 50%;
 }
 
+
+/*Healthcare*/
 .SME-card {
-    grid-column: 3;
-    grid-row: 1 / 4;
+    grid-column: 1/3;
+    grid-row: 2;
+    background-color: lightblue;
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #FFA552;
+
+
+    font-weight: light;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(to bottom, rgb(247, 236, 225) 40%, transparent 100%);
 }
 
+/*Salary*/
 .Salary-loan-card {
     grid-column: 1;
-    grid-row: 2 / 4;
-}
-
-.NDIC-card {
-    grid-column: 2;
-    grid-row: 2;
-}
-
-.SME-loan-card {
-    grid-column: 2;
-    grid-row: 3/4;
-}
-
-
-
-
-.loans-title-card,
-.Salary-loan-card,
-.SME-loan-card,
-.NDIC-card,
-.SME-card {
+    grid-row: 1;
+      background: linear-gradient(to bottom, rgb(247, 236, 225) 45%, transparent 100%);
     border-radius: 20px;
-    padding: 20px;
-    gap: 24px;
-    background-color: #F5F0EA;
-    border: 1px solid #E7DFD4;
-}
+    border: 1px solid;
+    border-color: #FFA552;
 
-.NDIC-card {
-    color: #1a1f2c;
-    background-color: rgba(255, 255, 255, 0.05);
     text-align: center;
-}
-
-
-
-.Salary-loan-card,
-.SME-loan-card,
-.SME-card {
+    font-weight: light;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+   
 }
 
-.card-img-wrap {
-    width: 100%;
-    border-radius: 12px;
-    overflow: hidden;
-}
+/*SME*/
+.SME-loan-card {
+    grid-column: 2/2;
+    grid-row: 1;
+    background: linear-gradient(to bottom, rgb(247, 236, 225) 25%, transparent 100%);
+    border-radius: 20px;
+    border: 1px solid;
+    border-color: #FFA552;
 
-.card-img-wrap img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.Salary-loan-card .card-img-wrap,
-.SME-loan-card .card-img-wrap,
-.SME-card .card-img-wrap {
-    flex: 1;
-    height: unset;
-    width: 100%;
-}
-
-.NDIC-card {
-    color: #1a1f2c;
-    background-color: rgba(255, 255, 255, 0.05);
     text-align: center;
+    font-weight: light;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-.bento-grid .cbnLogo{
-    height: 80px;
-    margin-top: 0;
-    padding-top: 0;
-    padding-bottom: 15px;
+
+
+
+
+/*Salary*/
+.Salary-loan-card img {
+    width: 185px;
+    border-radius: 60px;
+
+    position: relative;
+    z-index: 1;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-.card-title {
-    font-size: 25px;
-    font-weight: 700;
-    color: #1a1f2c;
-    margin: 0;
+.card-img-bubble {
+    position: absolute;
+    width: 275px;
+    height: 265px;
+    border-radius: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 0;
+    background-color: rgb(248, 151, 52, 0.4);
+
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 5%, transparent 100%);
 }
 
-.Salary-loan-card,
-.SME-loan-card,
-.SME-card {
-    gap: 8px;
+.card-img-wrap {
+    position: relative;
+    height: 280px;
+
 }
 
-.loans-title-card{
+/*SME*/
+.SME-loan-card img{
+     width: 185px;
+    border-radius: 100px;
+
+    position: relative;
+    z-index: 1;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
+}
+
+.SME-loan-card .card-img-bubble{
+    background-color: rgb(97, 97, 99, 0.4);
+}
+
+
+/*Healthcare*/
+.SME-card{
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-    gap: 6px;
 }
 
-.loans-title-card .big-title {
-    margin: 0;
-    white-space: normal;
+.SME-card img {
+    width: 470px;
+    height: 300px;
+    border-radius: 70px;
+
+    position: relative;
+    z-index: 1;
+
+    -webkit-mask-image: linear-gradient(to bottom, black 60%, transparent 100%);
+    mask-image: linear-gradient(to bottom, black 70%, transparent 100%);
 }
 
-.loans-title-card .little-title {
-    text-align: left;
+.SME-card .healthcare-deets {
+    max-width: 650px;
+    
+}
+.SME-card .card-img-bubble{
+    background-color: rgb(253, 195, 46, 0.4);
+    width: 285px;
 }
 
-.loans-title-card .invertbigtitle {
-    display: inline;
-}
+
 
 @media (max-width: 767px) {
     .bento-grid {
