@@ -60,6 +60,11 @@ a {
   transition: border-color 0.3s ease, background 0.3s ease;
 }
 
+.NavHead {
+  isolation: isolate;
+  transform: translateZ(0);
+}
+
 .NavHead.scrolled {
   border-bottom-color: none;
 }
