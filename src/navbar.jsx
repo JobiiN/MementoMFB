@@ -9,23 +9,23 @@ function NavHead({ scrolled }) {
     const sections = ['home', 'AboutUs', 'Services', 'contact']
 
     const handleScroll = () => {
-  const sections = ['home', 'AboutUs', 'Services', 'contact']
-  
-  let closest = sections[0]
-  let closestDistance = Infinity
+      const sections = ['home', 'AboutUs', 'Services', 'contact']
 
-  for (let id of sections) {
-    const el = document.getElementById(id)
-    if (!el) continue
-    const distance = Math.abs(el.getBoundingClientRect().top - 100)
-    if (distance < closestDistance) {
-      closestDistance = distance
-      closest = id
+      let closest = sections[0]
+      let closestDistance = Infinity
+
+      for (let id of sections) {
+        const el = document.getElementById(id)
+        if (!el) continue
+        const distance = Math.abs(el.getBoundingClientRect().top - 100)
+        if (distance < closestDistance) {
+          closestDistance = distance
+          closest = id
+        }
+      }
+
+      setActiveId(closest)
     }
-  }
-
-  setActiveId(closest)
-}
     window.addEventListener('scroll', handleScroll, { passive: true })
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
@@ -34,7 +34,7 @@ function NavHead({ scrolled }) {
 
   return (
     <>
-    <div id='home'/>
+      <div id='home' />
       <div className={`NavHead${scrolled ? ' scrolled' : ''}`}>
         <div className='NaRow'>
           <a className='logoArea'>
@@ -43,10 +43,10 @@ function NavHead({ scrolled }) {
           </a>
 
           <div className='navBarLinks'>
-            <a href='#home'     className={linkClass('home')}>Home</a>
-            <a href='#AboutUs'  className={linkClass('AboutUs')}>About Us</a>
+            <a href='#home' className={linkClass('home')}>Home</a>
+            <a href='#AboutUs' className={linkClass('AboutUs')}>About Us</a>
             <a href='#Services' className={linkClass('Services')}>Services & Loans</a>
-            <a href='#contact'  className={linkClass('contact')}>Contact Us</a>
+            <a href='#contact' className={linkClass('contact')}>Contact Us</a>
           </div>
 
 
@@ -54,14 +54,12 @@ function NavHead({ scrolled }) {
           <button className='hamburger' onClick={() => setMenuOpen(!menuOpen)}>☰</button>
         </div>
 
-        {menuOpen && (
-          <div className='mobileMenu'>
-            <a href='#home'     onClick={() => setMenuOpen(false)}>Home</a>
-            <a href='#AboutUs'  onClick={() => setMenuOpen(false)}>About Us</a>
-            <a href='#Services' onClick={() => setMenuOpen(false)}>Services & Loans</a>
-            <a href='#contact'  onClick={() => setMenuOpen(false)}>Contact Us</a>
-          </div>
-        )}
+        <div className={`mobileMenu ${menuOpen ? 'mobileMenu--open' : ''}`}>
+          <a href='#home' onClick={() => setMenuOpen(false)}>Home</a>
+          <a href='#AboutUs' onClick={() => setMenuOpen(false)}>About Us</a>
+          <a href='#Services' onClick={() => setMenuOpen(false)}>Services & Loans</a>
+          <a href='#contact' onClick={() => setMenuOpen(false)}>Contact Us</a>
+        </div>
       </div>
     </>
   )

@@ -175,16 +175,31 @@ nav ul {
 .mobileMenu {
   display: flex;
   flex-direction: column;
-  padding: 10px 20px;
+ 
+
+  overflow: hidden;
+    max-height: 0; 
+    padding: 0 20px;
+    transition: max-height 0.4s ease-in-out, padding 0.4s ease-in-out;
+  
+
+}
+
+.mobileMenu--open {
+  max-height: 300px; /* enough to fit all links */
+   padding: 10px 20px;
 }
 
 .mobileMenu a {
   padding: 12px 0;
   border-bottom: 1px solid #eee;
+
+  color: white;
+
 }
 
 .mobileMenu a:hover{
-  color: #3B4252;
+  color: #F26A1F;
   font-weight: 500;
 }
 
